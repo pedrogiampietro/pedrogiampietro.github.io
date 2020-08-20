@@ -1,0 +1,45 @@
+extends ./frameset.pug
+
+block content
+    - var active = 3;
+    include ./components/c-header.pug
+    div(class="flex tablet column")
+        include ./components/c-aside.pug
+        section(id="content")
+            article(class="experience-data")
+                h3(class="title-03") Projetos
+                    div(class="divisor")
+
+                //- Timeline
+                div(class="c-timeline")
+                    
+                    div(class="timeline-item")
+                        div(class="item")
+                            div
+                                small
+                                    | Node.js | React | Redux | MySQl | Sequelize;
+                                h4(class="title-04") Hati AAC
+                            
+                            ul(class="ul-list")
+                                li Desenvolvimento AAC com Javascript;
+                                
+                                li 
+                                    | Github repositório 
+                                    a(href="https://github.com/pedrogiampietro/Hati" class="link") https://github.com/pedrogiampietro/Hati
+                            
+                            img(class="img-fluid" src="#" alt="Imagem do board" title="Imagem do board")
+
+                    div(class="timeline-item")
+                        div(class="item")
+                            div
+                                small
+                                    | Node.js | Expo | Nunjucks | Postgres;
+                                h4(class="title-04") Doe+Vidas
+                            
+                            ul(class="ul-list")
+                                li DOE é um projeto que visa ser um banco de dados para doadores de sangue;
+                                li 
+                                    | Github repositório 
+                                    a(href="https://github.com/pedrogiampietro/doe-vidas" class="link") https://github.com/pedrogiampietro/doe-vidas
+                            
+                            img(class="img-fluid" src="#" alt="Imagem da tela agenda" title="Imagem da tela agenda")

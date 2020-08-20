@@ -1,0 +1,42 @@
+.c-header {
+  background-color: transparent;
+  height: 60px;
+  margin-bottom: $margin-bottom-default;
+  width: 100%;
+
+  ul {
+    @extend %flexbox;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: inherit;
+    margin: 0 auto;
+    max-width: 1179px;
+
+    li {
+      align-items: center;
+      display: inline-flex;
+      list-style: none;
+      padding: 0 5px;
+
+      a {
+        color: $tertinary;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 8px 10px;
+        text-decoration: none;
+      }
+
+      &.active {
+        a {
+          color: $secondary;
+        }
+      }
+
+      &:hover {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
